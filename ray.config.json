@@ -1,0 +1,14 @@
+{
+  "Version" : "v1",
+  "Pipeline" : [
+    {
+      "Tool" : "go",
+      "Command" : ["build"],
+      "Type" : "build"
+    }, 
+    {
+      "Tool" : "./api.axell.me",
+      "Type" : "deploy"
+    }
+  ]
+}
