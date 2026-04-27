@@ -34,11 +34,11 @@ func ComposeDocs(docs []byte, name string) []byte {
 }
 
 func ComposeIndex(index []byte) []byte {
-	apiList := ""
-	for api, _ := range apis {
-		apiList += "<li><a href=\"" + "/" + api + "/docs" +"\">" + api + "</a></li>\n"
+	var apiList strings.Builder
+	for api := range apis {
+		apiList.WriteString("<li><a href=\"" + "/" + api + "/docs" +"\">" + api + "</a></li>\n")
 	}
-	return []byte(strings.ReplaceAll(string(index), "&&APIS&&", apiList))
+	return []byte(strings.ReplaceAll(string(index), "&&APIS&&", apiList.String()))
 }
 
 var docs = map[string][]byte {
@@ -50,7 +50,7 @@ func main() {
 		w.Header().Add("content-type", "text/html")
 		w.Write(Index)
 	})
-	http.HandleFunc("/{api}/{path...}", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/{api}/", func(w http.ResponseWriter, r *http.Request) {
 		if r.PathValue("api") == "docs.css" {
 			w.Header().Add("content-type", "text/css")
 			w.Write(DocsCss)
@@ -63,7 +63,7 @@ func main() {
 			return
 		}
 
-		if r.PathValue("path") == "docs" {
+		if r.URL.Path == "/" + r.PathValue("api") + "/docs" || r.URL.Path == "/" + r.PathValue("api") + "/docs/" {
 			w.Header().Add("content-type", "text/html")
 			w.Write(docs[r.PathValue("api")])
 			return

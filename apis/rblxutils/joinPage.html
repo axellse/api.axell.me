@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css">
+    <title>rblxutils join page</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(16, 16, 16);
+        }
+        :root {
+            font-family: "Hack";
+            color: white;
+        }
+
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+        }
+        .bar {
+            background-color: rgb(29, 29, 29);
+            width: 220px;
+            height: 12px;
+            border-radius: 15px;
+            margin-bottom: 13px;
+        }
+        .inner-bar {
+            background-color: rgb(67, 61, 139);
+            height: 100%;
+            border-radius: 15px;
+            width: 0%;
+            transition: width 0.2s;
+        }
+        span {
+            font-size: medium;
+            font-weight: 500;
+        }
+        a {
+            color: white;
+        }
+    </style>
+    <script>
+        let robloxStarted = false
+        function startRoblox() {
+            if (robloxStarted) return
+            robloxStarted = true
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('j') == '') {
+                document.location.href = "roblox://experiences/start?placeId=" + urlParams.get('p')
+            } else {
+                document.location.href = "roblox://experiences/start?placeId=" + urlParams.get('p') + "&gameInstanceId=" + urlParams.get('j')
+            }
+        }
+
+        let val = 0
+        let id = setInterval(function() {
+            // I KNOW I KNOW but it needs to look good okay?!
+            val += Math.floor(Math.random() * 30)
+            if (val > 100) {
+                val = 100
+                clearInterval(id)
+                document.querySelector('.status').innerHTML = `Don't have Roblox? <a href="http://setup.rbxcdn.com/RobloxPlayerInstaller.exe">Get it here</a>`
+            }
+            if (val > 30) {
+                startRoblox()
+            }
+
+            document.querySelector('.inner-bar').style.width = val + "%"
+        }, 300)
+    </script>
+</head>
+<body>
+    <div class="center">
+        <div class="bar">
+            <div class="inner-bar"></div>
+        </div>
+        <span class="status">Starting Roblox</span>
+    </div>
+</body>
+</html>
