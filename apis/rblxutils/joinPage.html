@@ -52,7 +52,7 @@
             if (robloxStarted) return
             robloxStarted = true
             const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get('j') == '') {
+            if (urlParams.get('j') == null) {
                 document.location.href = "roblox://experiences/start?placeId=" + urlParams.get('p')
             } else {
                 document.location.href = "roblox://experiences/start?placeId=" + urlParams.get('p') + "&gameInstanceId=" + urlParams.get('j')
