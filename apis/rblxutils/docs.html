@@ -1,10 +1,20 @@
-<h2>Bootstrapper</h3>
-<p class="type-desc">Endpoints used by the bootstrapper.</p>
+<h2>Configuration</h3>
+<p class="type-desc">Endpoints used for remote configuraton of rblxutils.</p>
 <hr>
 
 <fieldset>
     <legend>/v1/package-map </legend>
-    <p>Returns a JSON map for the directories to extract roblox packages from.</p>
+    <p>Returns a JSON map for the directories to extract roblox packages to.</p>
+</fieldset>
+
+<fieldset>
+    <legend>/v1/updates/json </legend>
+    <p>Returns a JSON document describing updates, what's currently going on in the community, new updates and holidays.</p>
+</fieldset>
+
+<fieldset>
+    <legend>/v1/updates/image </legend>
+    <p>Returns a banner image for v1/updates/json. The banner image is exactly 368 by 122 pixel PNG.</p>
 </fieldset>
 
 <h2>Misc</h3>

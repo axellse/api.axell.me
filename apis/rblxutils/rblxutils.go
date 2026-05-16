@@ -16,6 +16,12 @@ func GetDocs() []byte {
 //go:embed packagemap.json
 var PackageMap []byte
 
+//go:embed updates.json
+var Updates []byte
+
+//go:embed updates.png
+var UpdateImage []byte
+
 //go:embed joinPage.html
 var JoinPage []byte
 
@@ -30,6 +36,16 @@ func InitApi() func(w http.ResponseWriter, r *http.Request) {
 	mux.HandleFunc("/rblxutils/join/", func(w http.ResponseWriter, r *http.Request) {
 		w.Header().Add("content-type", "text/html")
 		w.Write(JoinPage)
+	})
+
+	mux.HandleFunc("/rblxutils/v1/updates/json", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Add("content-type", "application/json")
+		w.Write(Updates)
+	})
+
+	mux.HandleFunc("/rblxutils/v1/updates/image", func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Add("content-type", "image/png")
+		w.Write(UpdateImage)
 	})
 
 	return mux.ServeHTTP
