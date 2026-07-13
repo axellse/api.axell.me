@@ -1,10 +1,10 @@
 {
-    "Title" : "Welcome to rblxutils's beta!",
-    "Text" : "Welcome to rblxutils! This is a program that provides a collection of ways to extend Roblox, many of which are experimental. The program is currently in a beta phase but i hope to get a stable release out soon. You may visit [the github][https://github.com/axellse/rblxutils] for more info.",
+    "Title" : "Finally a stable release, v1!",
+    "Text" : "Now the first stable release, v1 is out! I've rewritten [the readme](https://github.com/axellse/rblxutils) to be a lot nicer and a lot has happend since v0. I don't have much to say, though i want to give a game shoutout to [sushi gambit](roblox://experiences/start?placeId=14907877970).",
     "Upgrade" : {
-        "Version" : 0,
-        "Download" : "https://github.com/axellse/rblxutils/releases/download/v0/rblxutils.exe",
-        "Signature" : "b19UlHwulg8CNP7L3D+c+P96g/YifEpO+ZT9F2D2s+SWEQfVMUW3ltmXOZNfI/dr+5j+E2BiaZOGx5EoSr1tsj/seSaMBvRCuJ62N6De2naHp/K8Glvy9nzGXchNmOa5FPdlZDr0Zn+3fYGkmT/xP1bpzu411LqY6xF0H7CqNFGxNkIhbhxApBzcglH6HZR86mV5dkFQOlwA+/MzyJF4Ufu9B2DnMhPImkQTrujX2J3gASQdxbzKXer/klFltavGjthrkfNOp35tnAmV3XTEd6v7a4AlNVXtWyeVsUBLpoTd9PUcPxmB3IZJQS3pj2F8B0Oif22piAMukEwjFjZaNE86D3SKy3VEicd3AhRYu+oCNu5M5F2TQHTjujAJGst1sGb6I0dABckw/qEmHg7Edi8PZrUuy83LBJCOSPYpEnm5KdtY3/CGEnqZeifIh4xEmY6HSYLf+7aVJGcJ/Dv+QAAUyN3eUgiVlYtv0eXdJb/MgiGsYTwM4SM6MZWhoYK9"
+        "Version" : 1,
+        "Download" : "https://github.com/axellse/rblxutils/releases/download/v1/rblxutils.exe",
+        "Signature" : "V0lWJrKfa22KMDo8mTYYntE1jeSg91lEkdlWVL0e6Y4ZZ7FRWItIZQMdGW7T1EsUZVL8VLeDKrFjzYRrhnoOOPIHiJYWulHbcfM91i4job2XQ8J2gfHaYwpGqHApHPU33hUcrjo5ZybIejX0qmzhfS2kXyzbew1QxYjcGSsxpOZAd/I8xONy6wAKUSwPOjcWzKj1wjoo3lAAcLhnqc7Mg3X4vvQ0YnXvafPhuBAACaSxKtIF7ycT40BD3RiYuuaRLRnIzZNNbyafQ3TznJC+8NDnLaDNrvJaPxynUuYoQxn7adiUv5CE58qBnCqW1/fXeQyBwnKq8MvzMumw8qwRMKf+st2IL3YdwIwepMrG+Ap0TZzDphe7irLLqCCfXpyq9hVBaN4Imbp5JnlcCxt0tYK+xmX8HITH8yuYImWGCnJ7fYV2aLTzC8nPVrbkrmViyFKCr64jVcgHzjuTnlGp2Wo881OZMBMoRmJ2sxEIg0zohZtWVcGiwLcAXFKpJ0QZ"
     },
-    "TextCols" : 5
+    "TextCols" : 6
 }
