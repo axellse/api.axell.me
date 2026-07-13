@@ -1,10 +1,10 @@
 {
     "Title" : "Finally a stable release, v1!",
-    "Text" : "Now the first stable release, v1 is out! I've rewritten [the readme](https://github.com/axellse/rblxutils) to be a lot nicer and a lot has happend since v0. I don't have much to say, though i want to give a game shoutout to [sushi gambit](roblox://experiences/start?placeId=14907877970).",
+    "Text" : "Now the first stable release, v1 is out! I've rewritten [the readme][https://github.com/axellse/rblxutils] to be a lot nicer and a lot has happend since v0. I don't have much to say, though i want to give a game shoutout to [sushi gambit][roblox://experiences/start?placeId=14907877970].",
     "Upgrade" : {
         "Version" : 1,
         "Download" : "https://github.com/axellse/rblxutils/releases/download/v1/rblxutils.exe",
         "Signature" : "V0lWJrKfa22KMDo8mTYYntE1jeSg91lEkdlWVL0e6Y4ZZ7FRWItIZQMdGW7T1EsUZVL8VLeDKrFjzYRrhnoOOPIHiJYWulHbcfM91i4job2XQ8J2gfHaYwpGqHApHPU33hUcrjo5ZybIejX0qmzhfS2kXyzbew1QxYjcGSsxpOZAd/I8xONy6wAKUSwPOjcWzKj1wjoo3lAAcLhnqc7Mg3X4vvQ0YnXvafPhuBAACaSxKtIF7ycT40BD3RiYuuaRLRnIzZNNbyafQ3TznJC+8NDnLaDNrvJaPxynUuYoQxn7adiUv5CE58qBnCqW1/fXeQyBwnKq8MvzMumw8qwRMKf+st2IL3YdwIwepMrG+Ap0TZzDphe7irLLqCCfXpyq9hVBaN4Imbp5JnlcCxt0tYK+xmX8HITH8yuYImWGCnJ7fYV2aLTzC8nPVrbkrmViyFKCr64jVcgHzjuTnlGp2Wo881OZMBMoRmJ2sxEIg0zohZtWVcGiwLcAXFKpJ0QZ"
     },
-    "TextCols" : 6
+    "TextCols" : 5
 }
